@@ -155,3 +155,37 @@ Reviews build trust, improve transparency, and help future guests choose the bes
 
 Implements database indexing and caching strategies for faster queries and reduced load.  
 This ensures smooth performance, even as the platform scales with more users and listings.
+
+## 🔐 API Security
+
+Security is a critical aspect of the Airbnb Clone backend to ensure safe and reliable interactions between users, hosts, and the system.  
+The following measures are implemented to protect user data, property information, and financial transactions:
+
+### 🔑 Authentication
+
+- Uses secure login and token-based authentication (JWT or OAuth2).
+- Ensures that only verified users can access the system and prevents unauthorized access.
+
+### 🛂 Authorization
+
+- Role-based access control (RBAC) for guests, hosts, and admins.
+- Guarantees that users can only perform actions they are permitted to (e.g., only hosts can create listings).
+
+### 📉 Rate Limiting
+
+- Prevents abuse of the API through excessive requests.
+- Helps mitigate denial-of-service (DoS) attacks and protects system stability.
+
+### 🔒 Data Protection
+
+- All sensitive data (e.g., passwords, payment details) is encrypted in storage and transit (HTTPS/TLS).
+- Protects user privacy and prevents data leaks.
+
+### 💳 Secure Payments
+
+- Integrates with trusted third-party payment providers.
+- Ensures financial transactions are safe, reducing risks of fraud and chargebacks.
+
+---
+
+Security is essential to **protect user accounts**, **safeguard property and booking data**, and **guarantee payment integrity**—all of which are vital for user trust and the platform’s success.
