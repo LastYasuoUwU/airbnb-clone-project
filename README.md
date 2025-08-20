@@ -106,20 +106,52 @@ docker-compose up --build
 
 The relationships between entities in the Airbnb Clone Backend are as follows:
 
-A User can create many Properties → (One-to-Many: users → properties).
+- A User can create many Properties → (One-to-Many: users → properties).
 
-A User can make many Bookings → (One-to-Many: users → bookings).
+- A User can make many Bookings → (One-to-Many: users → bookings).
 
-A Property can have many Bookings → (One-to-Many: properties → bookings).
+- A Property can have many Bookings → (One-to-Many: properties → bookings).
 
-A Booking is linked to exactly one Payment → (One-to-One: bookings → payments).
+- A Booking is linked to exactly one Payment → (One-to-One: bookings → payments).
 
-A Property can have many Reviews → (One-to-Many: properties → reviews).
+- A Property can have many Reviews → (One-to-Many: properties → reviews).
 
-A User can write many Reviews → (One-to-Many: users → reviews).
+- A User can write many Reviews → (One-to-Many: users → reviews).
 
-A Property can have many Images → (One-to-Many: properties → property_images).
+- A Property can have many Images → (One-to-Many: properties → property_images).
 
-A User can save many Favorite Properties → (One-to-Many: users → favorites).
+- A User can save many Favorite Properties → (One-to-Many: users → favorites).
 
-A Property can be saved by many Users → (One-to-Many: properties → favorites).
+- A Property can be saved by many Users → (One-to-Many: properties → favorites).
+
+## 🔎 Feature Breakdown
+
+### 👤 User Management
+
+Provides secure registration, authentication, and profile management for both guests and hosts.  
+This ensures that users can safely create accounts, manage their profiles, and access platform features.
+
+### 🏠 Property Management
+
+Hosts can create, update, and manage property listings with details such as location, pricing, and availability.  
+This allows guests to browse accurate property information and make informed booking decisions.
+
+### 📅 Booking System
+
+Enables users to reserve properties with check-in and check-out dates.  
+The system ensures availability, manages conflicts, and tracks the status of each booking.
+
+### 💳 Payment Processing
+
+Handles financial transactions related to bookings, ensuring secure and reliable payments.  
+It records transaction details and updates booking status upon successful payment.
+
+### ⭐ Review System
+
+Allows guests to leave ratings and feedback on properties after their stay.  
+Reviews build trust, improve transparency, and help future guests choose the best accommodations.
+
+### ⚡ Data Optimization
+
+Implements database indexing and caching strategies for faster queries and reduced load.  
+This ensures smooth performance, even as the platform scales with more users and listings.
