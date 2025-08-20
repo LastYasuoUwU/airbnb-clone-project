@@ -189,3 +189,25 @@ The following measures are implemented to protect user data, property informatio
 ---
 
 Security is essential to **protect user accounts**, **safeguard property and booking data**, and **guarantee payment integrity**—all of which are vital for user trust and the platform’s success.
+
+## 🚀 CI/CD Pipeline
+
+A CI/CD (Continuous Integration / Continuous Deployment) pipeline automates the process of testing, building, and deploying code.  
+For the Airbnb Clone backend, implementing a CI/CD pipeline ensures that new features and bug fixes are reliably integrated, tested, and deployed without manual intervention, reducing errors and improving development speed.
+
+### Key Benefits
+
+- **Automated Testing**: Ensures that code changes do not break existing functionality.
+- **Faster Deployment**: Updates can be pushed to production quickly and consistently.
+- **Improved Collaboration**: Team members can safely contribute without worrying about integration conflicts.
+
+### Recommended Tools
+
+- **GitHub Actions**: Automate testing, building, and deployment workflows.
+- **Docker**: Containerize the backend for consistent environments across development, testing, and production.
+- **Celery & Redis**: Handle asynchronous tasks reliably within the deployment pipeline.
+- **PostgreSQL**: Ensures the database is properly migrated and seeded during deployment.
+
+---
+
+CI/CD pipelines are crucial for maintaining code quality, streamlining deployment, and supporting scalable development for the project.
