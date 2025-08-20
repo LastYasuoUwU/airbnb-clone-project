@@ -102,7 +102,7 @@ cd airbnb-clone-backend
 docker-compose up --build
 ```
 
-## 📊 Entity-Relationship Design (ERD)
+## 📊 Database Design
 
 The relationships between entities in the Airbnb Clone Backend are as follows:
 
