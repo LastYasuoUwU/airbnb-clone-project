@@ -101,3 +101,25 @@ cd airbnb-clone-backend
 # Build and run with Docker
 docker-compose up --build
 ```
+
+## 📊 Entity-Relationship Design (ERD)
+
+The relationships between entities in the Airbnb Clone Backend are as follows:
+
+A User can create many Properties → (One-to-Many: users → properties).
+
+A User can make many Bookings → (One-to-Many: users → bookings).
+
+A Property can have many Bookings → (One-to-Many: properties → bookings).
+
+A Booking is linked to exactly one Payment → (One-to-One: bookings → payments).
+
+A Property can have many Reviews → (One-to-Many: properties → reviews).
+
+A User can write many Reviews → (One-to-Many: users → reviews).
+
+A Property can have many Images → (One-to-Many: properties → property_images).
+
+A User can save many Favorite Properties → (One-to-Many: users → favorites).
+
+A Property can be saved by many Users → (One-to-Many: properties → favorites).
